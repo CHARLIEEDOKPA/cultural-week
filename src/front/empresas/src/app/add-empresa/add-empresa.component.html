@@ -1,0 +1,42 @@
+<div id="add-empresa">
+    <h1>Añadir Empresa</h1>
+    <div id="form-wrapper">
+        <form action="" [formGroup]="addForm" (submit)="create()">
+            <div class="input">
+                <label for="">Nombre: </label>
+                <input type="text" formControlName="nombre" value="xd">
+            </div>
+            <div class="input">
+                <label for="">Lugar: </label>
+                <input type="text" formControlName="lugar">
+            </div>
+            <div class="input">
+                <label for="">Ofrece (Separadas por comas): </label>
+                <input type="text" formControlName="tecnologias">
+            </div>
+            <div class="input">
+                <label for="">Coordenada Y: </label>
+                <input type="text" formControlName="coordenadaY">
+            </div>
+            <div class="input">
+                <label for="">Coordenada X: </label>
+                <input type="text" formControlName="coordenadaX">
+            </div>
+            <div class="input">
+                <label for="">Fundación: </label>
+                <input type="date" formControlName="fundacion">
+            </div>
+            <div class="input">
+                <label for="">Imagen/URL: </label>
+                <input type="text" formControlName="url">
+            </div>
+            <div class="input" id="history">
+                <label for="">Historia: </label>
+               <textarea rows="10" cols="50" formControlName="historia"></textarea>
+            </div>
+            <div id="button">
+                <input type="submit" value="Añadir">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+#add-empresa h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #not-found {
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'Mallanna';
+  }
+  
+  #form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #add-empresa {
+    padding: 50px;
+  }
+  
+  .input {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #add-empresa,
+  input,
+  textarea {
+    font-family: "K2D";
+  }
+  
+  label {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  #history label {
+    align-self: center;
+  }
+  
+  input,
+  textarea {
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  textarea {
+      padding: 10px;
+  }
+  
+  #button {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  input[type=submit] {
+      padding: 10px;
+      font-size: 20px;
+      background-color: #2AE526;
+      transition: 300ms;
+      
+  }
+  
+  input[type=submit]:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+  }
+  
+  
+  
+  input[type=date],input[type=text] {
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  input[type].ng-invalid, textarea.ng-invalid {
+      border: 1px solid red;
+  }
+

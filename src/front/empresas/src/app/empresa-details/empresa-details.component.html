@@ -1,0 +1,36 @@
+@if (empresa) {
+    <div id="empresa-detail">
+        <div id="left-side">
+            <div id="logo-image">
+                <img src="{{empresa.url}}" alt="">
+            </div>
+            <div id="info">
+                <h4>Fundación : {{empresa.fundacion | date:'dd/MM/yyyy'}}</h4>
+                <h3 id="lugar">Lugar: {{empresa.lugar}}</h3>
+                <H4>Tecnologías: </H4>
+                <ul>
+                    <li *ngFor="let tec of empresa.tecnologias">{{tec}}</li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        <div id="right-side">
+            <h1>{{empresa.nombre}}</h1>
+            <p>{{empresa.historia}}</p>
+        </div>
+    </div>
+    <div id="map-container">
+        <h1>MAPA DEL LUGAR</h1>
+        <div id="map-wrapper">
+            <div id="map"></div>
+        </div>
+        
+    </div>
+    
+}@else {
+    <div id="not-found">
+        <h1>NOT FOUND</h1>
+    </div>
+    
+}

@@ -1,0 +1,39 @@
+<div id="empresa">
+  <div id="first-section">
+    <div id="bandera-malaga">
+      <img src="../../assets/img/Flag_of_Málaga,_Spain.svg.png" alt="" />
+    </div>
+    <h1>LAS EMPRESAS TECNOLÓGICAS EN MÁLAGA EN EL SIGLO XX Y/O XXI</h1>
+  </div>
+  <div id="empresas-logos">
+    <img src="../../assets/img/image 3.png" alt="" />
+    <img src="../../assets/img/image 4.png" alt="" />
+    <img src="../../assets/img/image 5.png" alt="" />
+    <img src="../../assets/img/image 7.png" alt="" />
+  </div>
+  <div id="empresas-container">
+    <h2>Empresas</h2>
+    <div id="botones">
+      <button (click)="todo()">Todos</button>
+      <button (click)="filtrarPorSigloXXI()">XXI</button>
+      <button (click)="filtrarPorSigloXX()">XX</button>
+    </div>
+    <div id="empresa-cards-wrapper">
+      
+      <div id="empresa-cards">
+        @for (empresa of empresasFilter; track empresa.id) {
+        <a [routerLink]="[empresa.id]">
+          <div class="card">
+            <div class="company-image">
+              <img src="../../assets/img/image 6.png" alt="" />
+            </div>
+            <hr />
+            <h3>{{ empresa.nombre }}</h3>
+            <h4>Fundación: {{ empresa.fundacion | date : "y" }}</h4>
+          </div>
+        </a>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div id="empresa-crud">
+  <h1>CRUD EMPRESAS</h1>
+  <div id="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <td>Nombre</td>
+          <td>Fundación</td>
+          <td>Lugar</td>
+          <td>Editar</td>
+          <td>Borrar</td>
+        </tr>
+      </thead>
+      <tbody>
+        @for (empresa of empresas; track empresa.id) {
+        <tr>
+          <td>{{ empresa.nombre }}</td>
+          <td>{{ empresa.fundacion | date : "dd/MM/yyyy" }}</td>
+          <td>{{ empresa.lugar }}</td>
+          <td>
+            <a [routerLink]="['edit', empresa.id]"
+              ><i class="fa-regular fa-pen-to-square"></i
+            ></a>
+          </td>
+          <td (click)="deleteEmpresa(empresa.id)">
+            <i class="fa-solid fa-trash"></i>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    <div id="add-wrapper">
+      <a routerLink="add"><i class="fa-solid fa-plus"></i></a>
+    </div>
+  </div>
+</div>

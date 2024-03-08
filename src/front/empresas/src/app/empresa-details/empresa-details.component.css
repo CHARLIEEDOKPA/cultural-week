@@ -1,0 +1,85 @@
+#empresa-detail {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+#left-side {
+  align-self: center;
+}
+#left-side img {
+  width: 400px;
+}
+
+#right-side h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+#right-side {
+  width: 800px;
+}
+
+#left-side h4 {
+  font-size: 35px;
+}
+
+#left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+ul {
+  font-size: 20px;
+}
+
+
+
+#right-side p {
+  font-size: 25px;
+}
+
+#not-found,
+#empresa-detail,
+#map-container {
+  font-family: "Mallanna";
+}
+
+#not-found {
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+
+#lugar {
+  font-size: 20px;
+  width: 430px;
+}
+
+#technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+#map-container {
+  text-align: center;
+  padding: 50px;
+
+}
+
+#map-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  width: 500px;
+  height: 500px;
+  border: 2px solid ;
+}
+
+

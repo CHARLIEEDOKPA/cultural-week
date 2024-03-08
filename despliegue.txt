@@ -1,0 +1,6 @@
+==COMO DESPLEGAR LA APLICACIÓN==
+1). Cargar el archivo sql que está en la carpeta sql.
+2). Comando "cd src/front/empresas"
+3). Comando "npm install"
+4). Iniciar o arrancar springboot
+5). Comando "ng serve --open"

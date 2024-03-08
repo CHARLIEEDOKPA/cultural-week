@@ -1,0 +1,48 @@
+@if (empresa) {
+    <div id="add-empresa">
+        <h1>Editar Empresa</h1>
+        <div id="form-wrapper">
+            <form action="" [formGroup]="addForm" (submit)="edit(empresa.id)">
+                <div class="input">
+                    <label for="">Nombre: </label>
+                    <input type="text" formControlName="nombre" [(ngModel)]="empresa.nombre" autocomplete="off">
+                </div>
+                <div class="input">
+                    <label for="">Lugar: </label>
+                    <input type="text" formControlName="lugar" [(ngModel)]="empresa.lugar">
+                </div>
+                <div class="input">
+                    <label for="">Ofrece (Separadas por comas): </label>
+                    <input type="text" formControlName="tecnologias" [(ngModel)]="tecnologias">
+                </div>
+                <div class="input">
+                    <label for="">Coordenada Y: </label>
+                    <input type="text" formControlName="coordenadaY" [(ngModel)]="coordenadas[0]">
+                </div>
+                <div class="input">
+                    <label for="">Coordenada X: </label>
+                    <input type="text" formControlName="coordenadaX"  [(ngModel)]="coordenadas[1]">
+                </div>
+                <div class="input">
+                    <label for="">Fundación: </label>
+                    <input type="date" formControlName="fundacion" ngModel="{{empresa.fundacion | date:'yyyy-MM-dd'}}">
+                </div>
+                <div class="input">
+                    <label for="">Imagen/URL: </label>
+                    <input type="text" formControlName="url" [(ngModel)]="empresa.url">
+                </div>
+                <div class="input" id="history">
+                    <label for="">Historia: </label>
+                   <textarea rows="10" cols="50" formControlName="historia" [(ngModel)]="empresa.historia"></textarea>
+                </div>
+                <div id="button">
+                    <input type="submit" value="Editar">
+                </div>
+            </form>
+        </div>
+    </div>
+} @else {
+    <div id="not-found">
+        <h1>NOT FOUND</h1>
+    </div>
+}
